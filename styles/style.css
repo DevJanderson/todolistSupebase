@@ -1,0 +1,133 @@
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background: var(--very-light-grayish-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url('../assets/images/bg-desktop-light.jpg') no-repeat center top
+    fixed;
+  background-size: 100%;
+}
+
+.container .wrapper {
+  width: 30rem;
+  max-width: 30rem;
+  height: 40rem;
+}
+
+.container .wrapper header {
+  width: 100%;
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .wrapper header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+
+  letter-spacing: 0.5rem;
+}
+
+.container .wrapper header img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.container .wrapper form {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.container .wrapper form > input {
+  width: 100%;
+
+  border: 0;
+  border-radius: 4px;
+
+  padding: 1rem 1.5rem;
+  outline: none;
+}
+
+.container .wrapper .todos {
+  margin-top: 2rem;
+
+  background: var(--white);
+  border-radius: 4px;
+
+  -webkit-box-shadow: 2px 3px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper .todos .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapper .todos .list .item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid var(--light-grayish-blue);
+
+  padding: 1rem 1.5rem;
+}
+
+.wrapper .todos .list .item-info {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.wrapper .todos .list .item-info span.completed {
+  color: var(--light-grayish-blue);
+  text-decoration: line-through;
+}
+
+.wrapper .todos .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 1.5rem;
+
+  align-self: flex-end;
+}
+
+.wrapper .todos .footer .todo-count {
+  font-size: 0.8rem;
+  color: var(--dark-grayish-blue);
+}
+
+.wrapper .todos .footer .filter ul {
+  display: flex;
+  gap: 1rem;
+
+  font-size: 0.9rem;
+}
+
+.wrapper .todos .footer button {
+  font-size: 0.9rem;
+
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
