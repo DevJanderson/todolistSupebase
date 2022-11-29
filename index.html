@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="pt-BR">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <meta charset="UTF-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> -->
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/style.css" />
 
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+  <title>Todo App</title>
+</head>
 
-    <title>Todo App</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <header>
-          <h1>TODO</h1>
-          <img src="assets/images/icon-moon.svg" alt="" />
-        </header>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <header>
+        <h1>TODO</h1>
+        <img src="assets/images/icon-moon.svg" alt="" />
+      </header>
 
-        <form action="">
-          <input type="text" placeholder="Create a new todo..." />
-        </form>
+      <form action="">
+        <input type="text" placeholder="Create a new todo..." />
+      </form>
 
-        <div class="todos">
-          <ul class="list"></ul>
+      <div class="todos">
+        <ul class="list"></ul>
 
-          <div class="footer">
-            <span class="todo-count">1 item(s) left</span>
+        <div class="footer">
+          <span class="todo-count">1 item(s) left</span>
 
-            <div class="filter">
-              <ul>
-                <li>
-                  <a href="#">All</a>
-                </li>
-                <li>
-                  <a href="#">Active</a>
-                </li>
-                <li>
-                  <a href="#">Completed</a>
-                </li>
-              </ul>
-            </div>
+          <div class="filter">
+            <ul>
+              <li>
+                <a href="#">All</a>
+              </li>
+              <li>
+                <a href="#">Active</a>
+              </li>
+              <li>
+                <a href="#">Completed</a>
+              </li>
 
-            <button class="clear-completed">Clear Completed</button>
+              
+
+            </ul>
           </div>
+
+          <button class="clear-completed">Clear Completed</button>
         </div>
       </div>
     </div>
+  </div>
+  
+  <script src="supabase.js"></script>
+  <script src="app.js"></script>
+</body>
 
-    <script src="app.js"></script>
-    <script src="newApp.js"></script>
-  </body>
 </html>
